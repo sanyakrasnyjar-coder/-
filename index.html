@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script defer src="./bd.js"></script>
+    <script defer src="./comments.js"></script>
+    <title>Smart College</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img src="logo.png" alt="Smart College" class="logo-image" />
+          <div class="logo-text">Smart college</div>
+        </div>
+        <nav class="nav-menu">
+          <a href="#seminars">Ближайшие семинары</a>
+          <a href="#team">О нашей команде</a>
+          <a href="#lecturers">Наши лекторы</a>
+          <a href="#courses">Курсы</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <div class="kostil1">
+        <div class="content-left">
+          <h1>Ум — твой капитал.</h1>
+        </div>
+        <div class="content-right">
+          <p class="main-text">
+            Smart College — это образование, заточенное под будущее. Мы не
+            просто даем знания, мы развиваем критическое мышление, цифровую
+            грамотность и способность решать реальные задачи. Наша цель —
+            подготовить специалистов, которые не будут искать работу, а будут
+            создавать новые отрасли. Обучение через практику, актуальные
+            программы и среда, которая заряжает на результат.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section id="seminars" class="seminars-section">
+      <div class="kostil2">
+        <div class="seminars-container">
+          <h2>Ближайшие семинары</h2>
+
+          <div class="table-container">
+            <table class="seminars-table">
+              <tbody class="seminars-list">
+                <tr class="loading-row">
+                  <td colspan="3" class="loading">Загрузка семинаров...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section">
+      <div class="kostil3">
+        <div class="team-container">
+          <div class="team-header">
+            <h2>О нашей команде</h2>
+          </div>
+          <div
+            class="team-main-image"
+            style="background-image: url('i2.png')"
+          ></div>
+          <div class="team-description">
+            <p>Наш добрый и любящий коллектив</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lecturers" class="lecturers-section">
+      <div class="lecturers-container">
+        <h2>Наши лекторы</h2>
+        <p class="lecturers-description">
+          Профессиональные преподаватели с практическим опытом
+        </p>
+        <div class="lecturers-images">
+          <div class="lecturer-item">
+            <div class="lecturer-photo">
+              <img src="11i.png" alt="Бухгалтер" class="lecturer-img" />
+              <span class="lecturer-name">Бухгалтер</span>
+            </div>
+          </div>
+          <div class="lecturer-item">
+            <div class="lecturer-photo">
+              <img src="13i.png" alt="Аналитик" class="lecturer-img" />
+              <span class="lecturer-name">Аналитик</span>
+            </div>
+          </div>
+          <div class="lecturer-item">
+            <div class="lecturer-photo">
+              <img src="12i.png" alt="Финансист" class="lecturer-img" />
+              <span class="lecturer-name">Финансист</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+      <div class="kostil4">
+        <div class="courses-container">
+          <h2>Курсы</h2>
+          <div class="courses-list">
+            <div class="course-item">
+              <h3>Финансовая грамотность</h3>
+            </div>
+            <div class="course-item">
+              <h3>Азбука предпринимательства</h3>
+            </div>
+            <div class="course-item">
+              <h3>Экономика</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <div class="kostil5">
+        <div class="reviews-container">
+          <div class="reviews-header">
+            <h2>Отзывы</h2>
+          </div>
+          <div class="reviews-grid">
+            <div class="reviews-column">
+              <div class="review-card">
+                <div class="review-avatar avatar-top-left">
+                  <img src="i5.png" alt="Skillet" class="avatar-img" />
+                </div>
+                <div class="review-content">
+                  <div class="review-header">
+                    <h3>Skillet</h3>
+                    <div class="review-stars">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <p class="review-email">Skillet@mail.ru</p>
+                  <div class="review-text-container">
+                    <p class="review-text">
+                      "Курс очень привлекателен, материал структурирован, без
+                      пробелов! Предоставляю - настоящее профессиональное, умеет
+                      работать с любыми формами работы и в любой области."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-avatar avatar-bottom-left">
+                  <img src="i3.png" alt="Gats" class="avatar-img" />
+                </div>
+                <div class="review-content">
+                  <div class="review-header">
+                    <h3>Gats</h3>
+                    <div class="review-stars">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <p class="review-email">gs@mail.ru</p>
+                  <div class="review-text-container">
+                    <p class="review-text">
+                      Впечатления исключительно положительные. Программа очень
+                      насыщенная и, что самое важное, актуальная – учтены все
+                      последние тренды 2025–2026 года.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-column">
+              <div class="review-card">
+                <div class="review-avatar avatar-top-right">
+                  <img src="i6.png" alt="Kaska" class="avatar-img" />
+                </div>
+                <div class="review-content">
+                  <div class="review-header">
+                    <h3>Kaska</h3>
+                    <div class="review-stars">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <p class="review-email">ks@gmail.com</p>
+                  <div class="review-text-container">
+                    <p class="review-text">
+                      Добрый день, знания полученные на вашем курсе помогли мне
+                      в работе. Спасибо вам огромное.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="review-card">
+                <div class="review-avatar avatar-bottom-right">
+                  <img src="i4.png" alt="Griff" class="avatar-img" />
+                </div>
+                <div class="review-content">
+                  <div class="review-header">
+                    <h3>Griff</h3>
+                    <div class="review-stars">
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                      <span class="star">★</span>
+                    </div>
+                  </div>
+                  <p class="review-email">gf@gmail.com</p>
+                  <div class="review-text-container">
+                    <p class="review-text">
+                      Спасибо за познавательный и развивающий курс! Было много
+                      полезной для меня информации. Материал буду использовать
+                      при работе с детьми с ОВЗ.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-form-section">
+            <h3>Пожалуйста оставьте комментарий о Smart College</h3>
+            <form class="review-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="user-name">Имя</label>
+                  <input
+                    type="text"
+                    id="user-name"
+                    placeholder="Введите ваше имя"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="user-email">Почта</label>
+                  <input
+                    type="email"
+                    id="user-email"
+                    placeholder="Введите ваш email"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="user-review">Отзыв</label>
+                <textarea
+                  id="user-review"
+                  placeholder="Напишите ваш отзыв"
+                ></textarea>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="agree-terms" />
+                <label for="agree-terms"
+                  >Соглашаюсь на обработку персональных данных</label
+                >
+              </div>
+              <div class="form-submit">
+                <button type="button" class="submit-btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+      <div class="kostil6">
+        <div class="contacts-container">
+          <div class="contacts-header">
+            <h2>Контакты</h2>
+          </div>
+          <div class="contacts-content">
+            <div class="contacts-info">
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-label">Почта:</div>
+                  <div class="contact-value">ds@mail.ru</div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-label">Телефон:</div>
+                  <div class="contact-value">+7 (927) 892-86-12</div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-label">Адрес:</div>
+                  <div class="contact-value">ул. Пушкина, дом 10</div>
+                </div>
+              </div>
+              <div class="contact-form">
+                <div class="form-fields">
+                  <div class="form-field">
+                    <input type="text" placeholder="Фамилия Имя Отчество" />
+                  </div>
+                  <div class="form-field">
+                    <input type="email" placeholder="Почта" />
+                  </div>
+                </div>
+                <div class="contact-checkbox">
+                  <input type="checkbox" id="contact-agree" />
+                  <label for="contact-agree"
+                    >Соглашаюсь на обработку персональных данных</label
+                  >
+                </div>
+                <div class="form-submit">
+                  <button type="button" class="submit-btn">Отправить</button>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-map">
+              <div class="map-placeholder">
+                <img src="i8.png" alt="Карта" class="map-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <img
+                src="logo.png"
+                alt="Smart College"
+                class="footer-logo-image"
+              />
+              <div class="footer-logo-content">
+                <div class="footer-logo-text">Smart college</div>
+                <div class="footer-social">
+                  <div class="social-icons">
+                    <div class="social-icon">VK</div>
+                    <div class="social-icon">TG</div>
+                    <div class="social-icon">YT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-nav">
+              <a href="#seminars">Ближайшие семинары</a>
+              <a href="#team">О команде</a>
+              <a href="#lecturers">Лекторы</a>
+              <a href="#courses">Курсы</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#contacts">Контакты</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>2025 © Игнатенко Александр Денисович</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
